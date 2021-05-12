@@ -1,0 +1,9 @@
+version: '3'
+services:
+  itoken-redis:
+    build: /Users/abocide/Documents/GitHub/itoken/itoken-service-redis 
+    container_name: itoken-redis
+    ports:
+      - 8502:8502
+
+
