@@ -80,19 +80,6 @@
 					<mainClass>com.alu.itoken.service.redis.ServiceRedisApplication</mainClass>
 				</configuration>
 			</plugin>
-<!--			<plugin>-->
-<!--				&lt;!&ndash; 指定maven编译的jdk版本 &ndash;&gt;-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-compiler-plugin</artifactId>-->
-<!--				<version>3.8.1</version>-->
-<!--				<configuration>-->
-<!--					<verbose>true</verbose>-->
-<!--					<fork>true</fork>-->
-<!--					&lt;!&ndash;你的jdk地址&ndash;&gt;-->
-<!--					<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/bin/javac</executable>-->
-<!--					<skip>true</skip>-->
-<!--				</configuration>-->
-<!--			</plugin>-->
 		</plugins>
 
 	</build>
