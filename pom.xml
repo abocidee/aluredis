@@ -11,12 +11,6 @@
   <name>itoken-service-redis</name>
   
   <dependencies>
-   <!--    <dependency>
-        <groupId>com.alu</groupId>
-        <artifactId>itoken-common</artifactId>
-        <version>${project.parent.version}</version>
-      </dependency> -->
-      
       	<!-- redis  连接和pool -->
       	<dependency>
       	  <groupId>org.apache.commons</groupId>
@@ -26,7 +20,6 @@
       	  <groupId>org.springframework.boot</groupId>
       	  <artifactId>spring-boot-starter-data-redis</artifactId>
       	</dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
