@@ -21,7 +21,6 @@ public class RedisController {
 	
 	@RequestMapping(value = "put",method = RequestMethod.POST)
 	public String put(String key,String value,long time){
-		
 		redisService.put(key, value, time,TimeUnit.SECONDS);
 		return "ok";
 	}
