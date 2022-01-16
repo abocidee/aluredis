@@ -20,7 +20,7 @@ public class RedisController {
 	private RedisService redisService;
 	
 	@RequestMapping(value = "put",method = RequestMethod.POST)
-	public String put(String key,String value,long time) {
+	public String put(String key,String value,long time){
 		
 		redisService.put(key, value, time,TimeUnit.SECONDS);
 		return "ok";
