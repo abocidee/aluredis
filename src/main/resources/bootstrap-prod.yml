@@ -1,8 +1,37 @@
 spring:
-  cloud:
-    config:
-      url http://127.0.0.1:8888
-      name: itoken-service-redis
-      label: master
-      profile: prod
-      
+  application:
+    name: itoken-service-redis
+  zipkin:
+    base-url: http://127.0.0.1:9411
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8084
+  redis:
+    host: 101.35.168.170
+    port: 6379
+    timeout: 1000
+    poolMaxTotal: 100
+    poolMaxIdle: 10
+    poolMaxWait: 100000
+server:
+  port: 8502
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://49.235.225.140:8761/eureka
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
